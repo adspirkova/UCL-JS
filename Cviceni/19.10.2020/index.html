@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>calculator</h1>
+    <form id="calcForm">
+        <div>
+            <h2>First number</h2>
+            <input id="first" type="text" name="firstNumber" value=0></input>
+        </div>
+        <div>
+            <h2>Second number</h2>
+            <input id="second" type="text" name="secondNumber" value=0></input>
+        </div>
+        <div>
+            <button onclick="add(first.value, second.value)">+</button>
+            <button onclick="remove(first.value, second.value)">-</button>
+            <button onclick="multiply(first.value, second.value)">*</button>
+            <button onclick="substract(first.value, second.value)">/</button>
+        </div>
+        <button id="reset">RESET</button>
+
+        <p id="result-label" onclick="loading()">Result: <span id="result">0</span></p>
+    </form>
+
+    <script src="calculate.js"></script>
+</body>
+</html>
