@@ -18,9 +18,9 @@ let desiredSpeed = Number(prompt("Zadejte požadovanou rychlost"));
 
 if (isNaN(desiredSpeed)) {
     alert("Nezadal jsi cislo");
-} else if (desiredSpeed <= 0) {
+} else if (desiredSpeed <= 0 || !Number.isInteger(desiredSpeed)) {
     alert("Nezadal jsi kladne cislo");
-} else if (desiredSpeed < maxRoadSpeed && maxCarSpeed) {
+} else if (desiredSpeed <= maxRoadSpeed && desiredSpeed <= maxCarSpeed) {
     alert(`Your speed is: ${desiredSpeed}kmph - great.`);
 } else {
     alert(`Your speed is: ${desiredSpeed}kmph - not possible.`);
