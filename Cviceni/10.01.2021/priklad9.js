@@ -37,6 +37,21 @@ let newText = lines.join("\n");
 document.getElementById("text").innerText = newText;
 
 
+
+// function breakToLines(text, lineChars = 80) {
+//   let lines = ""
+  
+//   for (let start = 0; start < text.length; start += lineChars)
+//   {
+//     const end = start + lineChars
+//     lines += text.substring(start, end)
+//     if (end < text.length)
+//       lines += "\n"
+//   }
+
+//   return lines
+// }
+
 /* řešení bodů 1,2,3,4 
 
 function breakToLines2(text, lineChars = 80) {​​​​
